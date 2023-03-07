@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    /*Utilizar font linkeada en el head del html*/
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+}
+/*Contenedor principal*/
+article {
+    background-color: #ffffff;
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    position: relative;
+    top: 5em;
+    margin: auto;
+}
+/*Titulo principal*/
+h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 3em;
+}
+/*Subtitulo*/
+h3 {
+    margin: 30px;
+    font-size: 2em;
+    font-style: italic;
+}/*parrafo*/
+p {
+    margin: 30px;
+    font-size: 16px;
+    line-height: 1.5em;
+}
