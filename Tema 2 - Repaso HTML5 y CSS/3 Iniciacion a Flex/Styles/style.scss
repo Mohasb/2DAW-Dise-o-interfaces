@@ -1,0 +1,48 @@
+$tipo-borde-caja: border-box;
+$fuente: "Noto Sans", sans-serif;
+$color-fondo: #fafafa;
+$padding: 0;
+$margen: 0;
+$altura: 100vh;
+$alturaMinima: 400px;
+$texto-centrado: center;
+
+@mixin flex-centrado {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin tamanyo-texto($size, $unidad) {
+  font-size: $size$unidad;
+}
+
+
+* {
+  margin: $margen;
+  padding: $padding;
+  box-sizing: $tipo-borde-caja;
+  font-family: $fuente;
+}
+body {
+  background-color: $color-fondo;
+  height: $altura;
+  min-height: $alturaMinima;
+  section {
+    height: $altura;
+    @include flex-centrado;
+    article {
+      text-align: $texto-centrado;
+      h2,
+      h3 {
+        @include tamanyo-texto(3, em);
+      }
+      p {
+        margin: 5vh;
+        @include tamanyo-texto(1, em);
+        line-height: 1.5em;
+      }
+    }
+  }
+}

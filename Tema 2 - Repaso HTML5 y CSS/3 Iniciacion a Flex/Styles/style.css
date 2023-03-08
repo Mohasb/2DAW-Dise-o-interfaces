@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  height: 100vh;
+  min-height: 400px;
+}
+body section {
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body section article {
+  text-align: center;
+}
+body section article h2,
+body section article h3 {
+  font-size: 3 em;
+}
+body section article p {
+  margin: 5vh;
+  font-size: 1 em;
+  line-height: 1.5em;
+}/*# sourceMappingURL=style.css.map */
